@@ -86,16 +86,16 @@ let
     (linuxKernel.manualConfig rec {
       inherit stdenv lib;
 
-      version = "6.12.4-asahi";
+      version = "6.12.8-asahi";
       modDirVersion = version;
       extraMeta.branch = "6.12";
 
       src = fetchFromGitHub {
         # tracking: https://github.com/AsahiLinux/linux/tree/asahi-wip (w/ fedora verification)
-        owner = "AsahiLinux";
+        owner = "jannau";
         repo = "linux";
-        rev = "asahi-6.12.4-1";
-        hash = "sha256-0JJtJWM0eNKcBMkNRCOA6Vpoi6Ca1QCOlsmSQKRHAUA=";
+        rev = "dcp/dp-alt-6.12.8";
+        hash = "sha256-WqZ/Iq2nlUzm+VF05WSQixs5t8wBLu/H5ChyPqbLIDQ=";
       };
 
       kernelPatches = [
