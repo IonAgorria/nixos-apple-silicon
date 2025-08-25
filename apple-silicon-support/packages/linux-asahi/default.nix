@@ -130,10 +130,10 @@ let
 
       src = fetchFromGitHub {
         # tracking: https://github.com/AsahiLinux/linux/tree/asahi-wip (w/ fedora verification)
-        owner = "AsahiLinux";
+        owner = "IonAgorria";
         repo = "linux";
-        tag = "asahi-6.15.10-3";
-        hash = "sha256-au/v0bLzBaAMscfk47MZpyiG8pomw08qlT1RjVO9/x4=";
+        rev = "asahi-dp-alt-6.15.10-3";
+        hash = "sha256-E5RkZFQ/y6cjOcU4JvM+y1e0s2BT5JBAb/ShTtRdHsc=";
       };
 
       kernelPatches = [
