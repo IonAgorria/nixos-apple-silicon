@@ -33,8 +33,8 @@ let
         src = fetchFromGitHub {
           owner = "AsahiLinux";
           repo = "linux";
-          tag = "asahi-7.1.13-3";
-          hash = "sha256-quvdcQ2LbYQyCDQFKc6KPjWv+f5fpWfUrXo5Id0kpwE=";
+          rev = "ce9f2eba72c061a50b2d790450e90af3439d8c24"; #fairydust
+          hash = "sha256-W3yMSUe6xa+M/X0k86kbCS4g3d7jJmO3WV9L/5rQRhI=";
         };
 
         kernelPatches = [
